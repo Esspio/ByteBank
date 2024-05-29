@@ -4,5 +4,5 @@ import Cabecalho from './index';
 test("Deve renderizar o nome do usuário logado", () => {
     render(<Cabecalho/>);
     const userName = screen.getByText('Joana Fonseca Gomes');
-    expect(userName).toBeInDocument();
+    expect(userName).toBeInTheDocument();
 })
